@@ -11,7 +11,9 @@
     "axios": "^0.21.1",
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
+    "json-server": "^0.16.3",
     "lazysizes": "^5.3.2",
+    "memoizee": "^0.4.15",
     "modern-normalize": "^1.1.0",
     "mrm": "^3.0.8",
     "node-sass": "^6.0.1",
@@ -37,7 +39,8 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "server": "json-server --delay 300 --port 4040 --watch db.json "
   },
   "eslintConfig": {
     "extends": [
